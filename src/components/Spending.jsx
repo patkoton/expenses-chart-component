@@ -1,24 +1,26 @@
-import React, { Component } from 'react'
+import React from 'react'
 import styled from 'styled-components'
-import CanvasJSReact from '../assets/lib/canvasjs.react'
+import CanvasJSReact from '../assets/js/canvasjs.react'
 const CanvasJS = CanvasJSReact.CanvasJS;
 const CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
 
-CanvasJS.addColorSet("customColorSet1",
-                    [
-                    "hsl(10, 79%, 65%)",                
-                    "hsl(10, 79%, 65%)",
-                    "RoyalBlue",
-                    "hsl(10, 79%, 65%)",
-                    "hsl(10, 79%, 65%)",
-                    "hsl(10, 79%, 65%)",
-                    "hsl(10, 79%, 65%)",
-                  ]); 
+CanvasJS.addColorSet("customColorSet1", [
+  "hsl(10, 79%, 65%)",                
+  "hsl(10, 79%, 65%)",
+  "RoyalBlue",
+  "hsl(10, 79%, 65%)",
+  "hsl(10, 79%, 65%)",
+  "hsl(10, 79%, 65%)",
+  "hsl(10, 79%, 65%)",
+ ]
+); 
 
-const dataPoints =[];
-class Spending extends Component {
-  render() {
+
+const Spending = () => {
+// const dataPoints =[];
+// class Spending extends Component {
+//   render() {
   const options = {
     backgroundColor: "hsl(33, 100%, 98%)",
     colorSet: "customColorSet1",
@@ -49,16 +51,16 @@ class Spending extends Component {
               borderRadiusTopRight: 10,
               indexLabelColor: "red",
               borderRadius: "10px",
-              dataPoints: dataPoints,
-            //[
-            //     { label: "mon", y: 17.45   },
-            //     { label: "tue", y: 34.91  },
-            //     { label: "wed", y: 52.36  },
-            //     { label: "thu",  y: 31.07  },
-            //     { label: "fri",  y: 23.29  },
-            //     { label: "sat",  y: 43.28  },
-            //     { label: "sun",  y: 25.48  },
-            // ],
+              dataPoints: 
+            [
+                { label: "mon", y: 17.45   },
+                { label: "tue", y: 34.91  },
+                { label: "wed", y: 52.36  },
+                { label: "thu",  y: 31.07  },
+                { label: "fri",  y: 23.29  },
+                { label: "sat",  y: 43.28  },
+                { label: "sun",  y: 25.48  },
+            ],
      }]
  }
 
@@ -84,7 +86,7 @@ class Spending extends Component {
         <p className='p3'>Spending - Last 7 days</p>
         <BChart>
           <CanvasJSChart options = {options}
-              onRef = {ref => this.chart = ref}
+              // onRef = {ref => this.chart = ref}
               className='canva'
           />
         </BChart>
@@ -106,23 +108,23 @@ class Spending extends Component {
 }
 
 
-componentDidMount(){
-  var chart = this.chart;
-  fetch('data.json')
-  .then(function(response) {
-    return response.json();
-  })
-  .then(function(data) {
-    for (var i = 0; i < data.length; i++) {
-      dataPoints.push({
-        label: data[i].label,
-        y: data[i].y
-      });
-    }
-    chart.render();
-  });
-}
-}
+// componentDidMount(){
+//   var chart = this.chart;
+//   fetch('data.json')
+//   .then(function(response) {
+//     return response.json();
+//   })
+//   .then(function(data) {
+//     for (var i = 0; i < data.length; i++) {
+//       dataPoints.push({
+//         label: data[i].label,
+//         y: data[i].y
+//       });
+//     }
+//     chart.render();
+//   });
+// }
+// }
 
 
 const SDiv = styled.div`
