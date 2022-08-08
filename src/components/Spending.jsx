@@ -1,35 +1,36 @@
 import React from 'react'
 import styled from 'styled-components'
 import CanvasJSReact from '../assets/js/canvasjs.react'
-const CanvasJS = CanvasJSReact.CanvasJS;
+//const CanvasJS = CanvasJSReact.CanvasJS;
 const CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
 
-CanvasJS.addColorSet("customColorSet1", [
-  "hsl(10, 79%, 65%)",                
-  "hsl(10, 79%, 65%)",
-  "RoyalBlue",
-  "hsl(10, 79%, 65%)",
-  "hsl(10, 79%, 65%)",
-  "hsl(10, 79%, 65%)",
-  "hsl(10, 79%, 65%)",
- ]
-); 
+// CanvasJS.addColorSet("customColorSet1", [
+//   "hsl(10, 79%, 65%)",                
+//   "hsl(10, 79%, 65%)",
+//   "RoyalBlue",
+//   "hsl(10, 79%, 65%)",
+//   "hsl(10, 79%, 65%)",
+//   "hsl(10, 79%, 65%)",
+//   "hsl(10, 79%, 65%)",
+//  ]
+// ); 
 
 
-const Spending = () => {
 // const dataPoints =[];
 // class Spending extends Component {
-//   render() {
+  // render() {
+const Spending = () => {
   const options = {
     backgroundColor: "hsl(33, 100%, 98%)",
-    colorSet: "customColorSet1",
+    // colorSet: "customColorSet1",
     height: 200,
     
     axisX:{
       tickLength: 0,
       lineThickness: 0,
-      tickThickness: 0
+      tickThickness: 0,
+      indexLabelFontColor: "red"
      },
 
     axisY:{
@@ -44,23 +45,19 @@ const Spending = () => {
 
     data: [{				
               type: "column",
-              xValueFormatString: "DD",
-				      yValueFormatString: "$,##0.00",
+              color: "hsl(10, 79%, 65%)",
+              yValueFormatString: "$#,##0.00",
               cursor: "pointer",
-              borderRadiusTopLeft: 10,
-              borderRadiusTopRight: 10,
-              indexLabelColor: "red",
-              borderRadius: "10px",
               dataPoints: 
-            [
-                { label: "mon", y: 17.45   },
-                { label: "tue", y: 34.91  },
-                { label: "wed", y: 52.36  },
-                { label: "thu",  y: 31.07  },
-                { label: "fri",  y: 23.29  },
-                { label: "sat",  y: 43.28  },
-                { label: "sun",  y: 25.48  },
-            ],
+                            [
+                                { label: "mon", y: 17.45   },
+                                { label: "tue", y: 34.91  },
+                                { label: "wed", y: 52.36  },
+                                { label: "thu",  y: 31.07  },
+                                { label: "fri",  y: 23.29  },
+                                { label: "sat",  y: 43.28  },
+                                { label: "sun",  y: 25.48  },
+                            ],
      }]
  }
 
@@ -109,7 +106,7 @@ const Spending = () => {
 
 
 // componentDidMount(){
-//   var chart = this.chart;
+// const chart = this.chart;
 //   fetch('data.json')
 //   .then(function(response) {
 //     return response.json();
