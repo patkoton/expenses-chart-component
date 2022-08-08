@@ -31,7 +31,7 @@ Users will be able to:
 
 ### Screenshot
 
-![](./src/assets/images/Screenshot%20(108)..desktop-preview.png)
+![](./src/assets/images/Screenshot.desktop-preview.png)
 
 
 ### Links
@@ -51,24 +51,22 @@ Users will be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-I really learned a lot about how to use canvasJS for Column Chart. Aside from being able to download and import it, the implementation of important attributes that gave me what I want was what I learned while building. 
+I really learned a lot about how to use canvasJS for Column Chart. Aside from being able to download and import it, I learned how to implement the necessary attributes that gave me what I want while building. 
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<!-- Some HTML code I'm proud of -->
 <p className='amt'>${Math.round(sum)}</p>
 ```
 ```css
-.proud-of-this-css {
+/* Proud-of-this-css that i used using styled-components */
+{
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 ```
 ```js
-const proudOfThisFunc = () => {
+// proudOfThisFunc
   const summ = new Map([
                   [ "mon", 17.45  ],
                   [ "tue", 34.91  ],
@@ -83,7 +81,6 @@ const proudOfThisFunc = () => {
   summ.forEach(value => {
   sum += value * 4; 
 });
-}
 ```
 
 
@@ -118,6 +115,8 @@ const chart = this.chart;
 
 - [Canvas Charts](https://canvasjs.com) - This helped me with my column chart. I really liked this pattern and will use it going forward.
 
+- [Stackflow](https://stackoverflow.com/) - This community helped me with solutions to problems encountered while some codes weren't working.
+
 
 ## Author
 
@@ -128,6 +127,6 @@ const chart = this.chart;
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+I want to acknowledge [@HafeezSaidu](https://twitter.com/HafeezSaidu) for always being available to help while i'm having bugs running my code.
 
 
