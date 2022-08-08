@@ -31,7 +31,7 @@ Users will be able to:
 
 ### Screenshot
 
-![](./src/assets/images/Screenshot.desktop-preview.png)
+![Frontend Mentor - Expenses chart component solution](./src/assets/images/Screenshot.desktop-preview.png)
 
 
 ### Links
@@ -89,7 +89,7 @@ I really learned a lot about how to use canvasJS for Column Chart. Aside from be
 I will like to get explanation or better clarification to why my data is rendering twice in chart with this canvasJS Docs while mapping through from the data.json file dynamically in contrast to when it is hard-coded.
 
 Here's the screenshot to it rendering twice with it's code below
-![](./src/assets/images/Screenshot.re-rendering.png)
+![Data rendering twice in Chart](./src/assets/images/Screenshot.re-rendering.png)
 
 ```js
 componentDidMount(){
