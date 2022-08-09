@@ -24,7 +24,7 @@ const Spending = () => {
   const options = {
     backgroundColor: "hsl(33, 100%, 98%)",
     // colorSet: "customColorSet1",
-    height: 200,
+    height: 180,
     
     axisX:{
       tickLength: 0,
@@ -132,7 +132,7 @@ const SDiv = styled.div`
 
 const SpenDiv = styled.div`
   width: 400px;
-  height: 400px;
+  height: 370px;
   background-color: hsl(33, 100%, 98%);
   border-radius: 15px;
   padding-left: 20px;
@@ -156,7 +156,6 @@ const SpenDiv = styled.div`
 
 const BChart = styled.div`
     padding-top: 30px;
-    margin-bottom: 10px;
     color: hsl(27, 66%, 92%);
 
     .canva {
@@ -170,7 +169,7 @@ const BLpt = styled.div`
   font-family: 'DM Sans', sans-serif;
 
   .pt1 {
-    padding-top: 20px;
+    padding-top:15px;
   }
   .pt2 {
     padding-top: 40px;
