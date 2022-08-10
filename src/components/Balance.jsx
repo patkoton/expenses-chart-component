@@ -36,7 +36,9 @@ const BalDiv = styled.div`
   justify-content: space-between;
 
   @media only screen and (max-width: 375px) {
-    width: 330px;
+    width: 280px;
+    height: 80px;
+    padding-top: 15px;
 }
 `;
 

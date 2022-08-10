@@ -14,9 +14,10 @@ function App() {
 
 const MainDiv = styled.div`
   margin-top: 55px;
+  vertical-align: middle;
 
   @media only screen and (max-width: 375px) {
-    margin-top: 20px;
+    margin-top: 40px;
   }
 `;
 

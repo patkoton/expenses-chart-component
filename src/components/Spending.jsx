@@ -91,7 +91,7 @@ const Spending = () => {
         <BLpt>
           <div className='pt1'>
             <p className='mnth'><small>Total this month</small></p>
-            <p className='amt'>${Math.round(sum)}</p>
+            <p className='amt'>${(sum).toFixed(2)}</p>
           </div>
 
           <div className='pt2'>
@@ -149,9 +149,15 @@ const SpenDiv = styled.div`
   }
 
   @media only screen and (max-width: 375px) {
-    width: 330px;
-    margin-bottom: 20px;
-}
+    width: 280px;
+    height: 330px;
+    margin-bottom: 35px;
+
+    .p3 {
+      padding-top: 10px;
+      font-size: 17px;
+    }
+  }
 `;
 
 const BChart = styled.div`
@@ -161,6 +167,11 @@ const BChart = styled.div`
 
     .canva {
       width: 380px;
+    }
+
+    @media only screen and (max-width: 375px) {
+      padding-top: 10px;
+      margin-bottom: 5px;
     }
  `;
 
@@ -190,6 +201,21 @@ const BLpt = styled.div`
   .perc {
     font-size: small;
     font-weight: 400;
+  }
+
+  @media only screen and (max-width: 375px) {
+      .pt1 {
+        padding-top: 17px;
+      }
+      .pt2 {
+        padding-top: 27px;
+      }
+      .amt {
+        font-size: 24px;
+      }
+      .perc {
+        font-size: 12px;
+      }
   }
 `;
 
